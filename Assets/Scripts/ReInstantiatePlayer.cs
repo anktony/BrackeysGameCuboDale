@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ReInstantiatePlayer : MonoBehaviour
 {       
-    void OnDestroy() {
-        Debug.Log("Destruído. Renascendo...");
-
-     }
+    void OnDestroy() {}
 
 }

@@ -9,10 +9,10 @@ public class Score : MonoBehaviour
     public GameObject player;
     
 
-    void Update()
+    void LateUpdate()
     {
         // scoreText.text = player.position.z.ToString("0");
-        if(GameObject.Find("Player(Clone")){
+        if(GameObject.Find("Player(Clone)")){
             player = GameObject.Find("Player(Clone)");
             scoreText.text = player.gameObject.GetComponent<Transform>().position.z.ToString("0");
         }

@@ -11,24 +11,24 @@ public class InstantiatePlayer : MonoBehaviour
     GameObject playerPosition;
 
        
-    void Start()
-    {   
-           InstantiatePlayerWhenCalled();
-        
+    void Start(){}
+
+    void Update(){  
+        InstantiatePlayerWhenCalled();
     }
-    void Update()
-    {    }
 
     public void InstantiatePlayerWhenCalled(){
         Debug.Log(" abre Pretchex");
-        Instantiate(myPlayer, new Vector3(0, 1, 5), Quaternion.identity);
-        Debug.Log(" fecha Pretchex");
-        
-     }
+        if(!GameObject.Find("Player(Clone)")){
+            Debug.Log("Entrou na pretchex!");
+            Instantiate(myPlayer, new Vector3(0, 1, 5), Quaternion.identity);
+        }
+        Debug.Log(" fecha Pretchex"); 
+    }
 
      public void ChangeInstantiationNeed(){
          isInstantiationNeeded = !isInstantiationNeeded;
-     }
+    }
 
     void Awake() {
         Debug.Log("O chão foi chamado");

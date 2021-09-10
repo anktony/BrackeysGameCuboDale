@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 7685167462308459983}
   PlayerPosition: {x: 0, y: 0, z: 0}
-  forwardForce: 10000
+  forwardForce: 5000
   sideWaysForce: 50
 --- !u!114 &7685167462308459973
 MonoBehaviour:
@@ -157,4 +157,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316e407c201e5b747872019b2521bbb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7685167462308459982}
