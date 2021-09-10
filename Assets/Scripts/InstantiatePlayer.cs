@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class InstantiatePlayer : MonoBehaviour
 {
-    public GameObject myPlayer;
-
-    public bool isInstantiationNeeded = true;  
+    public GameObject myPlayer; 
 
     GameObject playerPosition;
 
@@ -18,19 +16,10 @@ public class InstantiatePlayer : MonoBehaviour
     }
 
     public void InstantiatePlayerWhenCalled(){
-        Debug.Log(" abre Pretchex");
-        if(!GameObject.Find("Player(Clone)")){
-            Debug.Log("Entrou na pretchex!");
+            if(!GameObject.Find("Player(Clone)")){
+            Debug.Log("Summonando player...");
             Instantiate(myPlayer, new Vector3(0, 1, 5), Quaternion.identity);
-        }
-        Debug.Log(" fecha Pretchex"); 
+        } 
     }
 
-     public void ChangeInstantiationNeed(){
-         isInstantiationNeeded = !isInstantiationNeeded;
-    }
-
-    void Awake() {
-        Debug.Log("O chão foi chamado");
-     }
 }
